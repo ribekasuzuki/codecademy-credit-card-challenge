@@ -58,7 +58,8 @@ const findInvalidCards = (cardArr) => {
   }
   return invalidCards
 };
-console.log(findInvalidCards(batch));
+findInvalidCards(batch);
+console.log(invalidCards);
 
 
 
@@ -77,12 +78,12 @@ const idInvalidCardCompanies = (arr) => {
           invalidCompanies.push("Visa")
         };
         break;
-        case 3: 
+        case 5: 
         if (!invalidCompanies.includes("Mastercard")) {
           invalidCompanies.push("Mastercard")
         };
         break;
-        case 3: 
+        case 6: 
         if (!invalidCompanies.includes("Discover")) {
           invalidCompanies.push("Discover")
         };
